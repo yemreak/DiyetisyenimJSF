@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Diyetisyenim</title>
+        <link href="resources/css/top.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/profil.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/bottom.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/log-screen.css" rel="stylesheet" type="text/css"/>
+        <script src="resources/js/main.js" type="text/javascript"></script>
+    </h:head>
+    <h:body>
+        <!-- Includes -->
+        <ui:include src="resources/includes/navigation-bar.xhtml"/>
+        <ui:include src="resources/includes/login.xhtml"/>
+        <ui:include src="resources/includes/register.xhtml"/>
+        <ui:include src="resources/includes/footer.xhtml"/>
+        <!-- End of Includes -->
+
+        <div class="center">
+            <div class="center-middle">
+                <div class="center-middle-elements">                        
+                    <div class="center-middle-elements-head">
+                        <h3 class="center-middle-elements-head-h3">KİŞİSEL BİLGİLER</h3>
+                    </div>
+                    <div class="center-middle-elements-form">
+                        <h:form>
+                            <h:selectOneRadio class="center-middle-elements-form-radio" value = "#{userInfo.gender}"> 
+                                <f:selectItem itemValue = "erkek" itemLabel = "Erkek" /> 
+                                <f:selectItem itemValue = "kadın" itemLabel = "Kadın" />
+                            </h:selectOneRadio>
+                            <h:inputText class="center-middle-elements-form-input" value="#{userInfo.name}" a:placeholder="Ad" />
+                            <h:inputText class="center-middle-elements-form-input" value="#{userInfo.surname}" a:placeholder="Soyad"/>
+                            <h:inputText class="center-middle-elements-form-input" value="#{userInfo.age}" a:placeholder="Yaş"/>
+                            <h:inputText class="center-middle-elements-form-input" value="#{userInfo.height}" a:placeholder="Boy (cm)"/>
+                            <h:inputText class="center-middle-elements-form-input" value="#{userInfo.weight}" a:placeholder="Mevcut Kilo (kg)"/>
+                            <h:inputText class="center-middle-elements-form-input" value="#{userInfo.neck}" a:placeholder="Boyun (cm)"/>
+                            <h:inputText class="center-middle-elements-form-input" value="#{userInfo.waist}" a:placeholder="Bel (cm)"/>
+                            <h:inputText class="center-middle-elements-form-input" value="#{userInfo.hip}" a:placeholder="Kalça (cm)"/>
+
+                            <h:commandButton  class="center-middle-elements-form-bottom-button" value="İlerle" action="#{userInfo.saveInfo()}"/>
+                        </h:form>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </h:body>
+</html>

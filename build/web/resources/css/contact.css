@@ -1,0 +1,45 @@
+.center{
+	height: 1000px;
+	width: 100%;
+}
+.center-middle{
+	background-color: #ffffff;
+	border-left: 1px solid #ecece5;
+	border-right: 1px solid #ecece5;
+	height: 1000px;
+	margin-left: 22.5%;
+	margin-right: 22.5%;
+	width: 55%;
+}
+.center-middle-top{
+	height: 120px;
+	margin-bottom: 20px;	
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+}
+.center-middle-top img{
+	float: left;
+	height: 50px;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	width: 50px;
+}
+.center-middle-top-h2{
+	float: left;
+	height: 50px;
+	margin-left: 50px;
+	margin-top: 70px;
+}
+.center-middle-elements{
+	height: 600px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.center-middle-elements-maps{
+	border: 1px solid #c0c0c0;
+	height: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80% 
+}

@@ -1,0 +1,40 @@
+<ui:composition 
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+    <!-- Internal CSS -->
+    <style type="text/css">
+        .little-top {
+            margin-top: 2%;
+        }
+    </style>
+
+    <!-- Register Screen -->
+    <div class="log-screen little-top" id="reg-screen">
+        <h:graphicImage class="close-box right-corner" value="resources/images/close.png" onclick="makeInvisible('reg-screen')" alt=""/>
+        <h:graphicImage style="padding-left: 30px;" value="resources/images/note.png" alt="Register"/> 
+        <h:form>
+            <h:inputText class="user-input" id="email" value="#{user.email}" a:placeholder="E-posta"/>
+            <h:outputText style="#{user.err_email}" id="err-mail-1" value="* Email zaten kullanımda veya hatalı girildi"/>
+            <h:inputText class="user-input" id="username" value="#{user.username}" a:placeholder="Kullanıcı Adı"/>
+            <h:outputText style="#{user.err_username}" id="err-user-1" value="* Kullanıcı adı zaten kullanımda veya hatalı girildi"/>
+            <h:inputSecret class="user-input" id="password" value="#{user.password}"  a:placeholder="Şifre"/>
+            <h:inputSecret class="user-input" id="repassword" value="#{user.repassword}"  a:placeholder="Şifreyi Tekrarlayın"/>
+            <h:outputText style="#{user.err_password}" id="err-pass-1" value="* Şifre hatalı girildi"/>
+            <h:commandButton class="login-button" value="Kayıt Ol" action="#{user.register()}">
+                <f:ajax execute="@form" render="err-mail-1 err-user-1 err-pass-1" />
+            </h:commandButton>
+            <h:outputText class="login-text" value="Zaten kayıtlı mısın?  "/>
+            <h:outputLink class="login-link" value="javascript:void(0)" onclick="toggle_log_reg_screen('log-screen')">Giriş yap</h:outputLink>
+        </h:form>
+    </div>
+    <!-- End of Register Screen -->
+
+    
+
+</ui:composition>
+
+

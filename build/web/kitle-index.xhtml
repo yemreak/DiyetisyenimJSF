@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Diyetisyenim</title>
+        <link href="resources/css/top.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/counting-form.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/bottom.css" rel="stylesheet" type="text/css"/>
+        <script src="resources/js/main.js" type="text/javascript"></script>
+        <link href="resources/css/log-screen.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        <!-- Includes -->
+        <ui:include src="resources/includes/navigation-bar.xhtml"/>
+        <ui:include src="resources/includes/login.xhtml"/>
+        <ui:include src="resources/includes/register.xhtml"/>
+        <ui:include src="resources/includes/footer.xhtml"/>
+        <!-- End of Includes -->
+
+        <div class="center">
+            <div class="center-middle">
+                <div class="center-middle-elements">                        
+                    <div class="center-middle-elements-head">
+                        <h3 class="center-middle-elements-head-h3">Vücut Kitle İndeksi</h3>
+                    </div>
+                    <div class="center-middle-elements-form">
+                        <h:form>
+                            <h:inputText class="center-middle-elements-form-input" value="#{userInfo.height}" a:placeholder="Boy (cm)"/>
+                            <h:inputText class="center-middle-elements-form-input" value="#{userInfo.weight}" a:placeholder="Mevcut Kilo (kg)"/>
+                            <h:commandButton  class="center-middle-elements-form-bottom-button" value="Hesapla" action="#{userInfo.saveBodyMassIndex()}">
+                                <f:actionListener binding="#{userInfo.calculateBodyMassIndex()}" />
+                            </h:commandButton>
+                            <br></br><br></br><br></br><br></br>
+                            <h:outputText class="center-middle-elements-form-bottom-text" value="#{userInfo.txt_bodyMassIndex}"/><br></br><br></br>
+                            <h:outputText class="center-middle-elements-form-bottom-text2" value="#{userInfo.explanation}"/><br></br><br></br>
+                            <h:outputText class="center-middle-elements-form-bottom-text3" value="#{userInfo.explanation2}"/>
+                        </h:form>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </h:body>
+</html>

@@ -1,0 +1,118 @@
+body{
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+}
+.top{
+    background-color: #ffffff;
+    border-bottom: 1px solid #ecece5;
+    height: 72px;
+    margin: -8px;
+    position: fixed;
+    transition: height 0.7s, padding-top 0.7s;
+    width: 100%;
+}
+.top:hover{
+    height: 80px;
+    padding-top:8px;
+}
+.top-middle{
+    height: 72px;
+    margin-left: 21.25%;
+    margin-right: 21.25%;
+    width: 57.5%;
+}
+.top-middle-elements{
+    float: left;
+    height: 72px;
+    text-align: center;
+    width: 11%;
+}
+.top-middle-elements:hover{
+	border-bottom: 2px solid green;
+	padding-bottom: 6px;
+}
+.top-middle-elements a{
+    color: #747474;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.top-middle-elements a:hover{
+    color: #000000;
+    font-size: 14.5px;
+}
+.top-middle-elements a:active{
+    color: #0066cc;
+    font-size: 14.3px;
+}
+.top-middle-elements-links{
+    height: 14px;
+    margin-bottom: 28.5px;
+    margin-top: 28.5px;
+}
+.top-middle-elements2{
+    float: left;
+    height: 72px;
+    text-align: center;
+    width: 11%;
+}
+.top-middle-elements2-img{
+    border-radius: 5px;
+    height: 60px;
+    margin-bottom: 5.5px;
+    margin-top: 5.5px;
+    transform: scaleX(-1);
+    transition: height 0.7s, width 0.7s;
+    width: 60px;
+}
+.top-middle-elements2-img:hover{
+    height: 62.8px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    transform: rotate(5deg);
+    width: 62.8px;
+}
+.top-middle-elements2-img2{
+    height: 50px;
+    margin-bottom: 10.5px;
+    margin-top: 10.5px;
+    transition: height 0.7s, width 0.7s;
+    width: 50px;
+}
+.top-middle-elements2-img2:hover{
+    height: 52.8px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    width: 52.8px;
+}
+
+.top-dropdown:hover .top-dropdown-menu {
+    max-height: 200px;
+}
+
+.top-dropdown-menu {
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+    position: relative;
+    max-height: 0;
+    margin-top: -10px;
+    border-radius: 5px;
+    border-left: 1.2px solid grey;
+    border-right: 1.2px solid grey;
+    background-color: white;
+}
+
+.top-dropdown-menu a {
+    display: inline-block;
+    color: rgba(25, 0, 61, 1);
+    text-decoration: none;
+    font-size: 21px;
+    font-family: fantasy; 
+}
+
+.top-dropdown-menu a:hover {
+    transition: font-size 0.3s, color 0.3s, font-family 0.3s, font-weight 0.3s;
+    color: rgba(51, 153, 255, 1);
+    font-size: 24px;
+    font-weight: bold;
+}

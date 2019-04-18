@@ -1,0 +1,43 @@
+<ui:composition 
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <div class="top">
+        <div class="top-middle">
+            <div class="top-middle-elements2"><h:outputLink value="index.xhtml" style="text-decoration: none"><img src="resources/images/top-icon.png" alt="" class="top-middle-elements2-img"/></h:outputLink></div>
+            <div class="top-middle-elements"><h:outputLink value="index.xhtml" style="text-decoration: none"><div class="top-middle-elements-links">Ana Sayfa</div></h:outputLink></div>                 
+            <div class="top-middle-elements"><h:outputLink value="dietician.xhtml" style="text-decoration: none"><div class="top-middle-elements-links">Diyetisyenler</div></h:outputLink></div>             
+            <div class="top-middle-elements"><h:outputLink value="about-us.xhtml" style="text-decoration: none"><div class="top-middle-elements-links">Hakkımızda</div></h:outputLink></div>            
+            <div class="top-middle-elements"><h:outputLink value="counting.xhtml" style="text-decoration: none"><div class="top-middle-elements-links">Hesaplamalar</div></h:outputLink></div>                
+            <div class="top-middle-elements"><h:outputLink value="sss.xhtml" style="text-decoration: none"><div class="top-middle-elements-links">SSS</div></h:outputLink></div>
+            <div class="top-middle-elements"><h:outputLink value="contact.xhtml" style="text-decoration: none"><div class="top-middle-elements-links">Bize Ulaşın</div></h:outputLink></div>
+            <div class="top-middle-elements #{user.visibility_logs}"><h:outputLink value="javascript:void(0)" onclick="toggle_log_reg_screen('log-screen')" style="text-decoration: none"><div class="top-middle-elements-links">Giriş Yap</div></h:outputLink></div>  
+            <div class="top-middle-elements #{user.visibility_logs}"><h:outputLink value="javascript:void(0)" onclick="toggle_log_reg_screen('reg-screen')" style="text-decoration: none"><div class="top-middle-elements-links">Kaydol</div></h:outputLink></div>
+            <div class="top-middle-elements2 #{user.visibility_user}"><h:outputLink value="profil.xhtml" style="text-decoration: none"><div class="top-middle-elements-links" style="color:#004c99; font-weight:600; text-align: right">#{userInfo.name} #{userInfo.surname}</div></h:outputLink></div>                
+
+            <div class="top-middle-elements2 top-dropdown #{user.visibility_user}">
+                <h:outputLink value="user-homepage.xhtml" style="text-decoration: none">
+                    <img src="resources/images/user_pic.png" alt="" class="top-middle-elements2-img2"/>                    
+                </h:outputLink>
+                <!-- Dropdown Menu -->
+                <div class="top-dropdown-menu">
+                    <h:form>
+                        <h:outputLink value="user-homepage.xhtml" style="text-decoration: none; padding-top: 7px;"> Ana Sayfam </h:outputLink>
+                        <h:outputLink value="user-info.xhtml" style="text-decoration: none;"> Profilim </h:outputLink><br></br>
+                        <h:outputLink value="profil.xhtml" style="text-decoration: none;"> Düzenle </h:outputLink><br></br>
+                        <h:commandLink action="#{user.logOut()}" value ="Çıkış" style="text-decoration: none; padding-bottom: 7px;">
+                            <f:actionListener binding="#{userInfo.logOut()}"/>
+                        </h:commandLink>
+                    </h:form>
+                </div>
+            </div>
+        </div>
+
+    </div><br></br><br></br><br></br>
+
+</ui:composition>
+
+

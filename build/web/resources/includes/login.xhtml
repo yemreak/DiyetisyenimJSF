@@ -1,0 +1,29 @@
+<ui:composition 
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+     <!-- Login Screen -->
+        <div class="log-screen" id="log-screen">
+            <h:graphicImage class="close-box right-corner" value="resources/images/close.png" onclick="makeInvisible('log-screen')" alt="Login"/>
+            <h:graphicImage value="resources/images/user.png" alt="logo"/>            
+            <h:form>
+                <h:inputText class="user-input" id="username" value="#{user.username}" a:placeholder="Kullanıcı Adı"/>
+                <h:outputText style="#{user.err_username}" id="err-user" value="* Kullanıcı adı bulunamadı"/>
+                <h:inputSecret class="user-input" id="password" value="#{user.password}" a:placeholder="Şifre"/>
+                <h:outputText style="#{user.err_password}" id="err-pass" value="* Şifreyi hatalı girdiniz"/>
+                <h:commandButton class="login-button" value="Giriş Yap" action="#{userInfo.loginAndRefreshInfos()}">
+                    <f:ajax execute="@form" render="err-user err-pass" />
+                    <f:actionListener binding="#{user.checkUser()}"/> <!-- İlk önce bunlar çalışır -->
+                </h:commandButton>
+                <h:outputText class="login-text" value="Kayıtlı hesabın yok mu?  "/>
+                <h:outputLink class="login-link" value="javascript:void(0)" onclick="toggle_log_reg_screen('reg-screen')">Kayıt Ol</h:outputLink>
+            </h:form>
+        </div>
+        <!-- End of Login Screen -->
+    
+</ui:composition>
+
+

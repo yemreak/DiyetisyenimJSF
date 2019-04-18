@@ -1,0 +1,99 @@
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+@keyframes rotate {
+    from {transform: rotate(0)}
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+.log-screen {
+    animation: zoom 1s;
+    background-color: #fffffe;
+    border: 1px solid #b0b0b0;
+    border-radius: 4.5%;
+    box-shadow: 0 0 2000px #000000;
+    display: none;
+    margin-left: 35%;
+    margin-top: 7.5%;    
+    overflow: hidden;
+    padding: 7px;
+    position: fixed;
+    transition: border 0.7s;
+    text-align: center;
+    width: 30%;
+}
+.log-screen * {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.log-screen img {
+    max-height: 40%;
+    max-width: 40%;
+    margin-bottom: 0;
+}
+.right-corner {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.close-box {
+    margin: 0;
+}
+.close-box:hover {
+    animation: rotate;
+    animation-duration: 1s;
+}
+.user-input {
+    border: 1.4px solid #eeeeee;
+    border-radius: 7px 7px;
+    display: block;
+    font-size: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3% 6% 3% 6%;
+    transition: border 0.7s;
+    width: 60%;
+}
+.user-input:hover {
+    border: 1.4px solid grey;
+    
+}
+.login-text, .login-link {
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    font-size: 17.3px;
+    color: blue;
+}
+.login-button {
+    background: linear-gradient(to top left, #9900ff, #6699ff);
+    border-radius: 15% 3%;
+    box-shadow: 2px 2px #fae6ff;
+    color: azure;
+    display: block;
+    font-size: 17px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+    padding: 2% 10% 2% 10%;
+}
+.login-button:hover {
+    background: linear-gradient(to top left, #0699ff, #0900ff);
+}
+.login-button:checked {
+    box-shadow: none;
+}
+.invisible {
+    display: none;
+}
+.visible {
+    display: block;
+}

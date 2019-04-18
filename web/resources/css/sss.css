@@ -1,0 +1,134 @@
+.center{
+	height: 970px;
+	width: 100%;
+}
+.center-middle{
+	background-color: #ffffff;
+	border-left: 1px solid #ecece5;
+	border-right: 1px solid #ecece5;
+	height: 970px;
+	margin-left: 22.5%;
+	margin-right: 22.5%;
+	width: 55%;
+}
+.center-middle-elements{
+	margin-bottom: 20px;
+	margin-top: -8px;
+	width: 100%;
+}
+.center-middle-elements-h3{
+	margin-left: 13%;
+	margin-bottom: 50px;
+	padding-top: 40px; 
+	width: 100%;
+}
+.center-middle-elements ul{
+	list-style-type: none;
+}
+.center-middle-elements li{
+	margin-left: 10%;	
+	margin-right: 10%;
+	width: 80%;
+}
+.question{
+	color: #606060;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: sans-serif;
+}
+#answer1{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer2{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer3{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer4{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer5{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer6{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer7{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer8{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer9{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer10{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer11{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}
+#answer12{
+	display: none;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-weight: 500;	
+	margin-bottom: 4px;
+	visibility: hidden;
+}

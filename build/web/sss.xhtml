@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Diyetisyenim</title>
+        <link href="resources/css/top.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/sss.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/bottom.css" rel="stylesheet" type="text/css"/>
+        <script src="resources/js/main.js" type="text/javascript"></script>
+        <link href="resources/css/log-screen.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        <!-- Includes -->
+        <ui:include src="resources/includes/navigation-bar.xhtml"/>
+        <ui:include src="resources/includes/login.xhtml"/>
+        <ui:include src="resources/includes/register.xhtml"/>
+        <ui:include src="resources/includes/footer.xhtml"/>
+        <!-- End of Includes -->
+        
+        <div class="center">
+            <div class="center-middle">
+                <div class="center-middle-elements">
+                    <h3 class="center-middle-elements-h3"><span style="color:#0066cc">Sıkça Sorulan</span> Sorular</h3>
+                    <ul>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer1');">▶</h:outputLink> Diyetisyenim nedir?</li>
+                        <li id="answer1">Diyetisyenim seni ideal kilona ve sağlıklı bir yaşama kavuşturmak için var olan ücretsiz bir online diyet uygulamasıdır.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer2');">▶</h:outputLink> Diyetisyenim’e Nasıl Üye Olabilirim?</li>
+                        <li id="answer2">Diyetisyenim.com üzerinden ya da AppStore/PlayStore aracılığıyla Diyetisyenim uygulamasını indirerek Diyetisyenim’e üye olabilirsin.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer3');">▶</h:outputLink> Diyetisyenim Ücretsiz Bir Uygulama mı?</li>
+                        <li id="answer3">Evet, Diyetisyenim ücretsiz bir uygulama. Uygulamayı indirerek ya da web sitesi üzerinden ücretsiz olarak yararlanabileceğin hizmetlerden bazıları şunlar: Beslenme ve sağlıklı yaşam konularındaki güncel içerikleri takip etme, egzersiz takibi yapma. Diyetisyenim’te diyet listesi talep eden kullanıcılarımız için diyetisyen kadromuzun kişiye özel diyet programı hazırladığı ücretli paketler de bulunur.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer4');">▶</h:outputLink> Ücretli Paketlerin Özellikleri Neler?</li>
+                        <li id="answer4">Diyet listesi talep eden kullanıcılar için Diyetisyenim’te iki ayrı paket bulunur. Standart Paket üyesi olursan, diyetisyenlerimiz tarafından boy, kilo ve yaş kriterlerine uygun şekilde hazırlanan diyet listeni uygular ve online diyetisyenine ayda beş soru sorma hakkına sahip olursun. Özel Paket üyesi olursan, üyeliğin gerçekleştikten sonra diyetisyenin mail adresine kişisel özelliklerini ayrıntılı olarak öğrenmek için bir anamnez testi gönderir ve bu testteki sorulara verdiğin cevaplara uygun olarak sana özel bir diyet listesi hazırlar. Diyet sürecinin tamamında diyetisyeninin gözetimi altında olur ve uygulama üzerinden ne zaman istersen diyetisyeninle iletişime geçersin.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer5');">▶</h:outputLink> Paket Ücretleri Ne Kadardır?</li>
+                        <li id="answer5">Standart Paket üyeliği aylık 25 TL, Özel Paket üyeliği ise aylık 159 TL’dir. iOS Standart Paket üyeliğiyse aylık 24.99 TL, Android Standart Paket üyeliği aylık 25 TL’dir.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer6');">▶</h:outputLink> Paket ödemelerini nasıl yapabilirim?</li>
+                        <li id="answer6">- Ödemeni telefon üzerinden yapmak istiyorsan, herhangi bir iPhone ya da iPad aracılığıyla App Store üzerinden, Android telefon kullanıyorsan mobil ödeme ve Diyetkart üzerinden yapabilirsin.<br></br>- Ödemeni diyetisyenim.com üzerinden yapmak istiyorsan, giriş yaptıktan sonra sağ üst kısımda yer alan “Ödeme” butonuna tıklayabilir ve yönergeleri izleyerek ödemeni yapabilirsin.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer7');">▶</h:outputLink> Üyeliğimi Nasıl İptal Edebilirim?</li>
+                        <li id="answer7">Üyeliğini iptal etmek için ana sayfada sağ üst köşede bulunan Profil' e tıkladıktan sonra, “Ayarlar” bölümüne gelip sayfanın en alt kısmında yer alan “Hesabımı tamamen silmek istiyorum.” linkine tıklarsan üyeliğin iptal edilir.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer8');">▶</h:outputLink>Memnun Kalmazsam Ücret İade Ediliyor Mu?</li>
+                        <li id="answer8">Standart Paket üyesiysen, ödeme yaptıktan sonraki 7 gün içerisinde üyeliğini iptal etmen durumunda ücret iade edilir. Özel Paket üyesiysen, diyetisyenin sana özel bir diyet planı hazırladığı için, diyet planın hazırlandıktan sonra ücret iadesi yapılmaz.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer9');">▶</h:outputLink> Yurtdışında Yaşıyorum. Diyetisyenim’i Kullanabilir Miyim?</li>
+                        <li id="answer9">Diyetisyenim’i dünyanın neresinde olursan ol kullanabilirsin. Yurtdışı ödemelerini havale yoluyla yapabilirsin.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer10');">▶</h:outputLink> Diyetisyenim Üyeliğinde Yaş Sınırı Var Mı?</li>
+                        <li id="answer10">Diyetisyenim hukuki gerekçelerle 18 yaşın altındaki kişilere diyet önerisinde bulunamaz.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer11');">▶</h:outputLink> Ölçüm Nasıl Yapılıyor?</li>
+                        <li id="answer11">Ölçüm için kişinin vücut kitle indeksi bilgisi ve vücut ölçüleri gerekir. Vücut ölçüleri uygulamadaki “Ölçü Gir” bölümünden manuel olarak girilebilir. Diyetkolik kişiye en uygun diyet listesini sunarken kişisel bilgilerini ve hedeflerini de göz önüne alır. Ayrıca akıllı tartı Scala’yı satın alabilir, böylece güvenilir ve kapsamlı ölçüm sonuçlarını öğrenebilirsin.</li>
+                        <li class="question"><h:outputLink style="text-decoration:none;" value="#refresh#" onclick="toggleDiv('answer12');">▶</h:outputLink> Scala Nedir?</li>
+                        <li id="answer12">Scala Türkiye’deki ilk ev tipi akıllı tartıdır ve Diyetkolik uygulamasıyla entegre şekilde çalışır. Diyetisyenim’in Scala uygulamasıyla birlikte ölçüm sonuçlarının hepsi (yağ, kas ve su oranın, vücut kitle inseksin, metabolizma hızın ve vücut yaşın) bluetooth yoluyla anında diyetisyenine ulaşır. Böylece ölçüm bilgilerin sen tartıdan indiğinde diyetisyenine ulaşmış olur ve bu bilgiler ışığında diyet listen sürekli güncellenir.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.es6.min.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function toggleDiv(id) {
+              var findId=document.getElementById(id);
+              if (findId.style.visibility==='hidden'){
+                  findId.style.display='block';
+                  findId.style.visibility='visible';
+              }
+              else{
+                  findId.style.display='none';
+                  findId.style.visibility='hidden';
+              }
+            }
+          </script>
+    </h:body>
+</html>
